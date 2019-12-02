@@ -1,0 +1,1 @@
+<import src="../../components/person$72165edb" /><template is="person$72165edb" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,24 @@
+<template name="card$630d95cd">
+  <view class="_div data-v-87a3403c content">
+    <view class="_div data-v-87a3403c successTip" data-index="{{cardNum}}" wx:if="{{cardNum==1}}">
+      <view class="_div data-v-87a3403c title"> 签到成功！ </view>
+      <view class="_div data-v-87a3403c content1" wx:if="{{morningdata.rankin == 0}}"> 早上好！<view class="_br data-v-87a3403c"></view> 恭喜你是第{{morningdata.getupRank}}个起床的北鼻<view class="_br data-v-87a3403c"></view>
+        {{morningdata.where1}}
+        <view class="_br data-v-87a3403c"></view>
+        {{morningdata.where2}}
+        <view class="_br data-v-87a3403c"></view>
+        {{morningdata.get}}
+        <view class="_br data-v-87a3403c"></view>
+        {{morningdata.whatmove}}
+        <view class="_br data-v-87a3403c"></view>
+      </view> <text class="_text data-v-87a3403c content1" style="margin-top:10rpx;" wx:if="{{morningdata.rankin == 1}}"> 早上好！<view class="_br data-v-87a3403c"></view> 恭喜你是第{{morningdata.getupRank}}个起床的北鼻 </text>
+      <view class="_div data-v-87a3403c content2" style="margin-top:70rpx" wx:if="{{morningdata.rankin == 0}}"> 到<label style="color:rgb(156,210,235);" class="_span data-v-87a3403c">{{morningdata.datetime}}</label>为止<view class="_br data-v-87a3403c"></view> 你已经连续签到第{{morningdata.onsign}}天<view class="_br data-v-87a3403c"></view> 获得积分：{{morningdata.score}}分<view class="_br data-v-87a3403c"></view> 积分共有：{{morningdata.totalscore}}分<view class="_br data-v-87a3403c"></view> 积分排名：{{morningdata.scoreRank}}名<view class="_br data-v-87a3403c"></view>
+      </view>
+      <view class="_div data-v-87a3403c content2" style="margin-top:20rpx" wx:if="{{morningdata.rankin == 1}}"> 到<label style="color:rgb(156,210,235);" class="_span data-v-87a3403c">{{morningdata.datetime}}</label>为止<view class="_br data-v-87a3403c"></view> 你已经连续签到第{{morningdata.onsign}}天<view class="_br data-v-87a3403c"></view> 获得积分：{{morningdata.score}}分<view class="_br data-v-87a3403c"></view> 积分共有：{{morningdata.totalscore}}分<view class="_br data-v-87a3403c"></view> 积分排名：{{morningdata.scoreRank}}名<view class="_br data-v-87a3403c"></view> 明天也要继续加油鸭！ </view>
+      <view class="_div data-v-87a3403c img">
+        <image src="http://image.myzhbit.cn/myzhbit/Getup/sure.png" class="_img data-v-87a3403c"></image>
+      </view>
+    </view>
+    <view class="_div data-v-87a3403c topCard" wx:if="{{cardNum==1}}"></view>
+  </view>
+</template>

@@ -1,0 +1,62 @@
+<import src="card$630d95cd" />
+<import src="outtime$7c908c24" /><template name="index$000a2227">
+  <view class="_div data-v-28c74443 container">
+    <view class="_div data-v-28c74443 phone"></view>
+    <view class="_div data-v-28c74443 head">
+      <image class="_img data-v-28c74443 bg" src="http://image.myzhbit.cn/myzhbit/Getup8/background.png"></image>
+      <image class="_img data-v-28c74443 rule" bindtap="handleProxy" src="http://image.myzhbit.cn/myzhbit/Getup/index/rule.png" data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+      <view class="_div data-v-28c74443 time">
+        <view class="_div data-v-28c74443 detailtime" wx:if="{{isSuccess}}">
+          {{morningdata.time}}
+        </view>
+      </view>
+      <view class="_div data-v-28c74443 time" style="left:33%; top:277rpx" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <view wx:if="{{!isSuccess}}" class="_div data-v-28c74443">
+          <image class="_img data-v-28c74443 signbutton" src="http://image.myzhbit.cn/myzhbit/Getup/signbutton.png"></image>
+        </view>
+      </view>
+      <view class="_div data-v-28c74443 des">
+        <view wx:if="{{isSuccess}}" class="_div data-v-28c74443"> ——签到时间—— </view>
+      </view>
+      <view class="_div data-v-28c74443 food" wx:if="{{rankin == 1 && isSuccess}}">
+        <view class="_div data-v-28c74443 info">
+          {{morningdata.mget}}
+        </view>
+      </view>
+      <view class="_div data-v-28c74443 detail" wx:if="{{isSuccess}}"><label bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_span data-v-28c74443"> 点击查看详情 </label></view>
+    </view>
+    <view class="_div data-v-28c74443 newsign">
+      <view class="_div data-v-28c74443 someone">
+        <view class="_div data-v-28c74443 newtext">最新签到</view>
+      </view>
+      <view wx:key="users" key="{{users}}" wx:if="{{users.avatarurl}}" wx:for="{{users}}" wx:for-index="index" wx:for-item="users" class="_view data-v-28c74443">
+        <view class="_div data-v-28c74443 avatarurl">
+          <image src="{{users.avatarurl}}" class="_img data-v-28c74443"></image>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-28c74443 step">
+      <view style="text-align: center;" class="_h4 data-v-28c74443">连签加分</view>
+      <view class="_div data-v-28c74443 cu-steps">
+        <view wx:key="num" key="{{num}}" wx:for="{{numList}}" wx:for-index="index" wx:for-item="num" class="_div data-v-28c74443 {{num.name > onsign ? 'cu-item' : 'cu-item text-blue'}}"><text class="_text data-v-28c74443 num"></text>
+          <image src="{{'http://image.myzhbit.cn/myzhbit/Getup8/'+num.con}}" class="_img data-v-28c74443 img"></image>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-28c74443 DayAndNum">
+      <view class="_div data-v-28c74443 all">
+        <view class="_div data-v-28c74443 blockAll" data-index="0">
+          <view class="_h4 data-v-28c74443">累计签到</view> <label class="_span data-v-28c74443">{{signdays}}</label>
+        </view>
+        <view class="_div data-v-28c74443 blockAll" data-index="1">
+          <view class="_h4 data-v-28c74443">今日排行</view> <label class="_span data-v-28c74443">{{morningrank}}</label>
+        </view>
+        <view class="_div data-v-28c74443 blockAll" data-index="2">
+          <view class="_h4 data-v-28c74443">积分排行</view> <label class="_span data-v-28c74443">{{totalscorerank}}</label>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-28c74443 last" bindtap="handleProxy" wx:if="{{isSuccess}}" data-eventid="{{'3'}}" data-comkey="{{$k}}"> 点击生成分享图片 </view> <canvas canvas-id="url" style="width: 100px;height: 100px;position: absolute;left: -99999999px;top: -99999999px;" class="_canvas data-v-28c74443"></canvas> <canvas canvas-id="sharepicture" style="width: 750px;height: 470px;position: absolute;left: -99999999px;top: -99999999px;" class="_canvas data-v-28c74443"></canvas> <template data="{{...$root[$kk+'0'], $root}}" is="card$630d95cd"></template> <template data="{{...$root[$kk+'1'], $root}}" is="outtime$7c908c24"></template>
+    <view class="_div data-v-28c74443 clickOut" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}"></view>
+  </view>
+</template>

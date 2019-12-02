@@ -1,0 +1,175 @@
+.head{
+    width: 100%;
+    margin-top:10rpx;
+    height: 88rpx;
+    background-color: #fff;
+    //position:fixed;
+    display: flex;
+    justify-content: center;
+    font-size: 30rpx;
+    color: rgb(51,51,51);
+    font-family: 'AdobeHeitiStd-Regular';
+    .qiaodao{
+        width: 340rpx;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .jifeng{
+        width: 340rpx;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+.phone{
+    height:850rpx;
+    width:100%;
+    background-color:#fff;
+    margin-top:10rpx
+}
+.title{
+    height: 88rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: "﻿MHeiM-C-GB18030-S60";
+    .avartUrl{
+        width: 66rpx;
+        height: 66rpx;
+        margin-left: 15rpx;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .spannumber{
+        display: flex;
+        align-items: center;
+        margin-left: 28rpx;
+        width: 65rpx;
+        height: 100%;
+        color: rgb(102,102,102);
+        font-size: 29rpx;
+    }
+    .spannameTime{
+        width: 460rpx;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: "﻿MHeiM-C-GB18030-S60";
+        margin-left: 23rpx;
+        font-size: 29rpx;
+        color: rgb(102,102,102);
+        .spantime{
+            text-align: center;
+            position: absolute;
+            right: 74rpx;
+        }
+        .spanscore{
+            //text-align: center;
+            position: absolute;
+            right: 23rpx;
+        }
+    }
+    .nameTime{
+        width: 460rpx;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: "﻿MHeiM-C-GB18030-S60";
+        margin-left: 25rpx;
+        font-size: 30rpx;
+        color: rgb(89,89,89);
+        .time{
+            width: 110rpx;
+            position: absolute;
+            //text-align: justify;
+            text-align: center;
+            font-size: 32rpx;
+            letter-spacing: 1rpx;
+            color: rgb(245,111,97);
+            left: 525rpx;
+        }
+        .score{
+            font-size: 32rpx;
+            color: rgb(245,111,97);
+            text-align: center;
+            position: absolute;
+            right: 28rpx;
+        }
+    }
+    .number{
+        width: 65rpx;
+        height: 100%;
+        margin-left: 20rpx;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(102,102,102);
+        font-weight: 900;
+        font-size: 33rpx;
+        .no1{
+            width: 44rpx;
+            height: 54rpx;
+            background-image: url('http://image.myzhbit.cn/myzhbit/Getup/paihang/pm1.png');
+            background-size: 100% 100%; 
+        }
+        .no2{
+            width: 44rpx;
+            height: 54rpx;
+            background-image: url('http://image.myzhbit.cn/myzhbit/Getup/paihang/pm2.png');
+            background-size: 100% 100%; 
+        }
+        .no3{
+            width: 44rpx;
+            height: 54rpx;
+            background-image: url('http://image.myzhbit.cn/myzhbit/Getup/paihang/pm3.png');
+            background-size: 100% 100%; 
+        }
+    }
+}
+.offsigntoday{
+    height: 88rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(102,102,102);
+    font-size: 29rpx;
+}
+.offsign{
+    height: 88rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(102,102,102);
+    font-size: 29rpx;
+}
+
+/*iphonex1040*/
+@media screen and (width: 375px) and (height:642px){
+    .phone{
+        height:995rpx;
+        width:100%;
+        background-color:#fff;
+        margin-top:10rpx
+    }
+}
+
+/*iphone以外 */
+@media screen and (min-width: 376px) and (min-height:643px){
+    .phone{
+        height:1050rpx;
+        width:100%;
+        background-color:#fff;
+        margin-top:10rpx
+    }
+}

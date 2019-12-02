@@ -1,0 +1,170 @@
+
+@charset "UTF-8";
+.head.data-v-1128af3a {
+  width: 100%;
+  margin-top: 10rpx;
+  height: 88rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+  color: #333333;
+  font-family: 'AdobeHeitiStd-Regular';
+}
+.head .qiaodao.data-v-1128af3a {
+  width: 340rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head .jifeng.data-v-1128af3a {
+  width: 340rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.phone.data-v-1128af3a {
+  height: 850rpx;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10rpx;
+}
+.title.data-v-1128af3a {
+  height: 88rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "\FEFFMHeiM-C-GB18030-S60";
+}
+.title .avartUrl.data-v-1128af3a {
+  width: 66rpx;
+  height: 66rpx;
+  margin-left: 15rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.title .avartUrl ._img.data-v-1128af3a {
+  width: 100%;
+  height: 100%;
+}
+.title .spannumber.data-v-1128af3a {
+  display: flex;
+  align-items: center;
+  margin-left: 28rpx;
+  width: 65rpx;
+  height: 100%;
+  color: #666666;
+  font-size: 29rpx;
+}
+.title .spannameTime.data-v-1128af3a {
+  width: 460rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "\FEFFMHeiM-C-GB18030-S60";
+  margin-left: 23rpx;
+  font-size: 29rpx;
+  color: #666666;
+}
+.title .spannameTime .spantime.data-v-1128af3a {
+  text-align: center;
+  position: absolute;
+  right: 74rpx;
+}
+.title .spannameTime .spanscore.data-v-1128af3a {
+  position: absolute;
+  right: 23rpx;
+}
+.title .nameTime.data-v-1128af3a {
+  width: 460rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "\FEFFMHeiM-C-GB18030-S60";
+  margin-left: 25rpx;
+  font-size: 30rpx;
+  color: #595959;
+}
+.title .nameTime .time.data-v-1128af3a {
+  width: 110rpx;
+  position: absolute;
+  text-align: center;
+  font-size: 32rpx;
+  letter-spacing: 1rpx;
+  color: #f56f61;
+  left: 525rpx;
+}
+.title .nameTime .score.data-v-1128af3a {
+  font-size: 32rpx;
+  color: #f56f61;
+  text-align: center;
+  position: absolute;
+  right: 28rpx;
+}
+.title .number.data-v-1128af3a {
+  width: 65rpx;
+  height: 100%;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #666666;
+  font-weight: 900;
+  font-size: 33rpx;
+}
+.title .number .no1.data-v-1128af3a {
+  width: 44rpx;
+  height: 54rpx;
+  background-image: url("http://image.myzhbit.cn/myzhbit/Getup/paihang/pm1.png");
+  background-size: 100% 100%;
+}
+.title .number .no2.data-v-1128af3a {
+  width: 44rpx;
+  height: 54rpx;
+  background-image: url("http://image.myzhbit.cn/myzhbit/Getup/paihang/pm2.png");
+  background-size: 100% 100%;
+}
+.title .number .no3.data-v-1128af3a {
+  width: 44rpx;
+  height: 54rpx;
+  background-image: url("http://image.myzhbit.cn/myzhbit/Getup/paihang/pm3.png");
+  background-size: 100% 100%;
+}
+.offsigntoday.data-v-1128af3a {
+  height: 88rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+  font-size: 29rpx;
+}
+.offsign.data-v-1128af3a {
+  height: 88rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+  font-size: 29rpx;
+}
+@media screen and (width: 375px) and (height: 642px) {
+.phone.data-v-1128af3a {
+    height: 995rpx;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10rpx;
+}
+}
+@media screen and (min-width: 376px) and (min-height: 643px) {
+.phone.data-v-1128af3a {
+    height: 1050rpx;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10rpx;
+}
+}

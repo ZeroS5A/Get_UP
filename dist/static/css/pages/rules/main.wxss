@@ -1,0 +1,54 @@
+
+.board {
+  margin-top: 10rpx;
+  height: 100%;
+  padding-left: 58rpx;
+  padding-top: 24rpx;
+  background: white;
+}
+.title {
+  color: rgb(245,111,97);
+  font-size: 28rpx;
+}
+.ol {
+  color: rgb(51,51,51);
+  margin-top: 24rpx;
+  font-size: 24rpx;
+  padding-bottom: 24rpx;
+}
+.li {
+  margin-top: 8rpx;
+}
+.table {
+  text-align: center;
+  width: 80%;
+  height: 230rpx;
+}
+.table_ {
+  text-align: center;
+  margin-top: 24rpx;
+  width: 80%;
+  height: 332rpx;
+}
+.thead {
+  height: 36rpx;
+  width: 100%;
+}
+.th {
+  height: 36rpx;
+  width: 50%;
+  font-size: 24rpx;
+  padding-left: 20rpx;
+  float: left;
+  border: 2rpx solid gray;
+  box-sizing: border-box;
+}
+.td {
+  height: 36rpx;
+  width: 50%;
+  font-size: 24rpx;
+  padding-left: 20rpx;
+  float: left;
+  border: 2rpx solid gray;
+  box-sizing: border-box;
+}

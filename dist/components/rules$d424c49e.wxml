@@ -1,0 +1,79 @@
+<template name="rules$d424c49e">
+  <view class="_div data-v-82aa8066">
+    <view class="_div data-v-82aa8066 board">
+      <view class="_div data-v-82aa8066 title"> [打开方式] </view>
+      <view class="_ol data-v-82aa8066 ol">
+        <view class="_li data-v-82aa8066 li">① 点击在菜单栏的 [起床]</view>
+        <view class="_li data-v-82aa8066 li">② 在后台回复 [起床]</view>
+        <view class="_li data-v-82aa8066 li">③ 在小程序中搜索 [起床争霸赛]</view>
+      </view>
+    </view>
+    <view class="_div data-v-82aa8066 board">
+      <view class="_div data-v-82aa8066 title"> [打卡时间] </view>
+      <view class="_ol data-v-82aa8066 ol">
+        <view class="_li data-v-82aa8066 li">每天早上6:30-10:30</view>
+        <view class="_li data-v-82aa8066 li">在小程序首页点击 [签到] 进行打卡，即完成签到</view>
+        <view class="_li data-v-82aa8066 li">积分会按照北鼻签到的时间段来给，越早签到,积分越多哦~</view>
+      </view>
+      <view class="_div data-v-82aa8066 table">
+        <view class="_div data-v-82aa8066 thead">
+          <view class="_div data-v-82aa8066 th">时间</view>
+          <view class="_div data-v-82aa8066 th">积分</view>
+        </view>
+        <view class="_div data-v-82aa8066 tbody">
+          <view class="_div data-v-82aa8066 td"> 6:30-6:40 </view>
+          <view class="_div data-v-82aa8066 td"> 20 </view>
+          <view class="_div data-v-82aa8066 td"> 6:40-7:30 </view>
+          <view class="_div data-v-82aa8066 td"> 19 </view>
+          <view class="_div data-v-82aa8066 td"> 7:30-8:30 </view>
+          <view class="_div data-v-82aa8066 td"> 18 </view>
+          <view class="_div data-v-82aa8066 td"> 8:30-10:30 </view>
+          <view class="_div data-v-82aa8066 td"> 17 </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-82aa8066 board">
+      <view class="_div data-v-82aa8066 title"> [连签规则] </view>
+      <view class="_div data-v-82aa8066 table_">
+        <view class="_div data-v-82aa8066 thead">
+          <view class="_div data-v-82aa8066 th">连续签到天数</view>
+          <view class="_div data-v-82aa8066 th">连续签到积分</view>
+        </view>
+        <view class="_div data-v-82aa8066 tbody">
+          <view class="_div data-v-82aa8066 td"> 2 </view>
+          <view class="_div data-v-82aa8066 td"> 1 </view>
+          <view class="_div data-v-82aa8066 td"> 3 </view>
+          <view class="_div data-v-82aa8066 td"> 2 </view>
+          <view class="_div data-v-82aa8066 td"> 4 </view>
+          <view class="_div data-v-82aa8066 td"> 3 </view>
+          <view class="_div data-v-82aa8066 td"> 5 </view>
+          <view class="_div data-v-82aa8066 td"> 4 </view>
+          <view class="_div data-v-82aa8066 td"> 6 </view>
+          <view class="_div data-v-82aa8066 td"> 5 </view>
+          <view class="_div data-v-82aa8066 td"> 7 </view>
+          <view class="_div data-v-82aa8066 td"> 5 </view>
+          <view class="_div data-v-82aa8066 td"> 8 </view>
+          <view class="_div data-v-82aa8066 td"> 5 </view>
+          <view class="_div data-v-82aa8066 td"> ... </view>
+          <view class="_div data-v-82aa8066 td"> ... </view>
+        </view>
+      </view>
+      <view class="_ol data-v-82aa8066 ol">
+        <view class="_li data-v-82aa8066 li">关于连续签到：连续签到 2 天及以上的北鼻，可获得连签加分，</view>
+        <view class="_li data-v-82aa8066 li">连续签到积分上线为5分！断签的北鼻只能重新开始啦~</view>
+      </view>
+    </view>
+    <view class="_div data-v-82aa8066 board">
+      <view class="_div data-v-82aa8066 title"> [关于签到失败] </view>
+      <view class="_div data-v-82aa8066 ol">
+        <view class="_div data-v-82aa8066 li">北鼻如遇签到失败，可以多尝试几次；</view>
+        <view class="_li data-v-82aa8066 li">若多次签到仍不成功，请在后台联系小北。</view>
+        <view class="_li data-v-82aa8066 li">为了帮助大家赶上新一天的早餐而不是新一天的午餐，起床争</view>
+        <view class="_li data-v-82aa8066 li">霸会一直开放给有需要的你们使用~</view>
+        <view class="_li data-v-82aa8066 li">每天按时认真签到的北鼻，除了收获满满的成就感，更重要是</view>
+        <view class="_li data-v-82aa8066 li">养成早起的好习惯。</view>
+        <view class="_li data-v-82aa8066 li"> 希望大家能够坚持，小北与你们同在！</view>
+      </view>
+    </view>
+  </view>
+</template>

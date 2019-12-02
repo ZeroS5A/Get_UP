@@ -1,0 +1,101 @@
+<template name="person$72165edb">
+  <view class="_div data-v-e3cbe086">
+    <modal hidden="{{modalstate}}" title="重新绑定手机号" confirm-text="提交" cancel-text="取消" bindcancel="handleProxy" bindconfirm="handleProxy" style="padding:0" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_modal data-v-e3cbe086">
+      <view class="_div data-v-e3cbe086"><input style="border: 2px solid #227D51;border-radius: 5px;width:60%;float:left;height:50rpx" type="text" placeholder="手机号码" value="{{userdata.phone}}" bindinput="handleProxy" auto-focus data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-e3cbe086" /> <button style="width:33%;float:right" size="mini" open-type="getPhoneNumber" bindgetphonenumber="handleProxy" type="primary" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-e3cbe086">自动获取</button></view>
+      <view style="clear:both" class="_div data-v-e3cbe086"></view>
+    </modal>
+    <modal hidden="{{rulemodal}}" title="关于我们" confirm-text="好的" no-cancel="true" bindconfirm="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_modal data-v-e3cbe086">
+      <scroll-view scroll-y="true" class="_scroll-view data-v-e3cbe086 shop-model">
+        <view style="height:30px" class="_div data-v-e3cbe086"></view>
+        <view class="_h2 data-v-e3cbe086">Hi 各位北理珠北鼻们！</view>
+        <view class="_p data-v-e3cbe086"> 作为北理珠最大的非官方媒体，我们一直尽最大的努力建设一个可爱、自由的地方给大家带来欢乐 </view>
+        <view class="_h2 data-v-e3cbe086">你想知道的，我们都有！</view>
+        <view class="_p data-v-e3cbe086">后台回复关键字即可获取相关信息</view>
+        <view class="_h2 data-v-e3cbe086">你想说的，我们帮你！</view>
+        <view class="_p data-v-e3cbe086">欢迎评论或者投稿（大声栏目）</view>
+        <view class="_p data-v-e3cbe086"></view>
+        <image src="http://image.myzhbit.cn/%E5%B0%8F%E6%8A%A5%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" class="_img data-v-e3cbe086 img"></image>
+        <view class="_h2 data-v-e3cbe086">最后欢迎北鼻在后台留下你的建议或意见！</view>
+        <view style="font-size:5px;float:right" class="_p data-v-e3cbe086">BY electronicAE.、Climsi、Sevexw、ZeroS</view>
+      </scroll-view>
+      <view class="_div data-v-e3cbe086"></view>
+    </modal>
+    <view class="_div data-v-e3cbe086 head">
+      <view class="_div data-v-e3cbe086 top">
+        <view class="_div data-v-e3cbe086 img">
+          <open-data type="userAvatarUrl" class="_open-data data-v-e3cbe086"></open-data>
+        </view>
+        <view class="_div data-v-e3cbe086 username">
+          <open-data type="userNickName" open-gid="xxxxxx" class="_open-data data-v-e3cbe086"></open-data>
+        </view>
+        <view class="_div data-v-e3cbe086 sign">
+          <view class="_div data-v-e3cbe086 No" wx:if="{{!isSuccess}}"> 未签到 </view>
+          <view class="_div data-v-e3cbe086 Is" wx:if="{{isSuccess}}"> 已签到 </view>
+        </view>
+      </view>
+      <view class="_div data-v-e3cbe086 bottom">
+        <view class="_div data-v-e3cbe086 DayAndNum">
+          <view class="_div data-v-e3cbe086 all">
+            <view class="_div data-v-e3cbe086 blockAll" data-index="0">
+              <view class="_h4 data-v-e3cbe086">累计签到</view> <label class="_span data-v-e3cbe086">{{signdays}}</label>
+            </view>
+            <view class="_div data-v-e3cbe086 blockAll" data-index="1">
+              <view class="_h4 data-v-e3cbe086">今日排行</view> <label class="_span data-v-e3cbe086">{{morningrank}}</label>
+            </view>
+            <view class="_div data-v-e3cbe086 blockAll" data-index="2">
+              <view class="_h4 data-v-e3cbe086">总积分</view> <label class="_span data-v-e3cbe086">{{totalscore}}</label>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-e3cbe086 ather">
+      <view class="_div data-v-e3cbe086 rebind" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">
+        <view class="_p data-v-e3cbe086 left">重新绑定手机</view>
+        <view class="_p data-v-e3cbe086 right">></view>
+      </view>
+      <view class="_div data-v-e3cbe086 about" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">
+        <view class="_p data-v-e3cbe086 left">关于我们</view>
+        <view class="_p data-v-e3cbe086 right">></view>
+      </view>
+    </view>
+    <view class="_div data-v-e3cbe086 recoveTitle">
+      <image src="http://image.myzhbit.cn/myzhbit/Getup/record.png" class="_img data-v-e3cbe086"></image>
+      <view class="_div data-v-e3cbe086 userdata">
+        <view class="_div data-v-e3cbe086 tr">
+          <view class="_div data-v-e3cbe086 th" style="width: 25%">签到时间</view>
+          <view class="_div data-v-e3cbe086 th" style="width:60rpx"></view>
+          <view class="_div data-v-e3cbe086 th">签到积分</view>
+          <view class="_div data-v-e3cbe086 th">连签加分</view>
+        </view>
+      </view>
+    </view>
+    <scroll-view scroll-y class="_scroll-view data-v-e3cbe086 scoll-look">
+      <view class="_div data-v-e3cbe086 user">
+        <view class="_div data-v-e3cbe086 date">
+          <view wx:key="index" key="{{index}}" class="_div data-v-e3cbe086 datetr" wx:for="{{datedata}}" wx:for-index="key" wx:for-item="item">
+            <view class="_div data-v-e3cbe086 datetd" wx:if="{{item.rank==0}}">{{item.date}}</view>
+            <view class="_div data-v-e3cbe086 datetd" style="color:rgb(245,111,97)" wx:if="{{item.rank<11 && item.rank!=0}}">{{item.date}}</view>
+            <view class="_div data-v-e3cbe086 datetd" wx:if="{{item.rank>10}}">{{item.date}}</view>
+          </view>
+        </view>
+        <view class="_div data-v-e3cbe086 table">
+          <view wx:key="user" key="{{user}}" class="_div data-v-e3cbe086 tr" wx:for="{{datedata}}" wx:for-index="key" wx:for-item="item">
+            <view class="_div data-v-e3cbe086 tdnorank" style="width: 25%" wx:if="{{item.rank==0}}">未签到</view>
+            <view class="_div data-v-e3cbe086 tdrank" style="width:60rpx;" wx:if="{{item.rank==0}}"></view>
+            <view class="_div data-v-e3cbe086 tdscore" wx:if="{{item.rank==0}}">0</view>
+            <view class="_div data-v-e3cbe086 tdsignscore" wx:if="{{item.rank==0}}">+0</view>
+            <view class="_div data-v-e3cbe086 td" style="color:rgb(245,111,97);width: 25%" wx:if="{{item.rank<11 && item.rank!=0}}">{{item.time}}</view>
+            <view class="_div data-v-e3cbe086 tdrank" style="color:rgb(156,210,235);" wx:if="{{item.rank<11 && item.rank!=0}}">前十</view>
+            <view class="_div data-v-e3cbe086 td" style="color:rgb(245,111,97);" wx:if="{{item.rank<11 && item.rank!=0}}">{{item.score}}</view>
+            <view class="_div data-v-e3cbe086 td" style="color:rgb(245,111,97);" wx:if="{{item.rank<11 && item.rank!=0}}">{{item.signscore}}</view>
+            <view class="_div data-v-e3cbe086 td" style="width: 25%" wx:if="{{item.rank>10}}">{{item.time}}</view>
+            <view class="_div data-v-e3cbe086 tdrank" style="width:60rpx;" wx:if="{{item.rank>10}}"></view>
+            <view class="_div data-v-e3cbe086 td" wx:if="{{item.rank>10}}">{{item.score}}</view>
+            <view class="_div data-v-e3cbe086 td" wx:if="{{item.rank>10}}">{{item.signscore}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</template>

@@ -1,0 +1,11 @@
+<template name="login$5afb09d6">
+  <view class="_div data-v-0980c59e head">
+    <view class="_div data-v-0980c59e">
+      <image class="_image data-v-0980c59e clock" src="http://image.myzhbit.cn/myzhbit/Getup/clock.png"></image>
+    </view>
+    <view class="_div data-v-0980c59e">
+      <image class="_image data-v-0980c59e tittle" src="http://image.myzhbit.cn/myzhbit/Getup/logintittle.png"></image>
+    </view>
+    <view class="_div data-v-0980c59e"><button class="_button data-v-0980c59e login" lang="zh_CN" open-type="getUserInfo" bindgetuserinfo="handleProxy" style="background-image:url(http://image.myzhbit.cn/myzhbit/Getup/loginbutton.png);" plain="true" data-eventid="{{'0'}}" data-comkey="{{$k}}"></button></view>
+  </view>
+</template>

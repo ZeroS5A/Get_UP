@@ -1,0 +1,94 @@
+<template name="phang$62a2f372">
+  <view class="_div data-v-1128af3a">
+    <view class="_div data-v-1128af3a head">
+      <view class="_div data-v-1128af3a qiaodao" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" style=" {{style1}}">签到排行</view>
+      <view class="_div data-v-1128af3a jifeng" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" style=" {{style2}}">积分排行</view>
+    </view>
+    <view class="_div data-v-1128af3a title" wx:if="{{number==1}}">
+      <view class="_div data-v-1128af3a spannumber">名次</view>
+      <view class="_div data-v-1128af3a avartUrl"></view>
+      <view class="_div data-v-1128af3a spannameTime">
+        <view class="_div data-v-1128af3a spanname">昵称</view>
+        <view class="_div data-v-1128af3a spantime">签到时间</view>
+      </view>
+    </view>
+    <view class="_div data-v-1128af3a signtoday" style="background-color:#fff;" wx:if="{{number==1}}">
+      <view class="_div data-v-1128af3a offsigntoday" wx:if="{{!signtoday}}"> 你今天还没签到 </view>
+      <view class="_div data-v-1128af3a title" wx:if="{{signtoday}}">
+        <view class="_div data-v-1128af3a number" style="color:rgb(245,111,97)">{{usermorning.rank}}</view>
+        <view class="_div data-v-1128af3a avartUrl">
+          <image src="{{usermorning.avatarurl}}" class="_img data-v-1128af3a"></image>
+        </view>
+        <view class="_div data-v-1128af3a nameTime">
+          <view class="_div data-v-1128af3a name">{{usermorning.nickname}}</view>
+          <view class="_div data-v-1128af3a time">
+            <view style="width:110rpx;text-align:center;color:rgb(245,111,97)" class="_div data-v-1128af3a">{{usermorning.time}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <scroll-view scroll-y="true" class="_scroll-view data-v-1128af3a phone" wx:if="{{number==1}}">
+      <view class="_view data-v-1128af3a phb" style="margin-top:17rpx" wx:key="morning" key="{{morning}}" wx:for="{{morning}}" wx:for-index="index" wx:for-item="morning">
+        <view class="_div data-v-1128af3a title" style="background-color:#fff;">
+          <view class="_div data-v-1128af3a number" style="color:rgb(245,111,97)">
+            <view wx:if="{{morning.rank<4}}" class="_div data-v-1128af3a {{'no' + morning.rank}}"></view>
+            <view wx:if="{{morning.rank>3}}" class="_div data-v-1128af3a afferthird">{{morning.rank}}</view>
+          </view>
+          <view class="_div data-v-1128af3a avartUrl">
+            <image src="{{morning.avatarurl}}" class="_img data-v-1128af3a"></image>
+          </view>
+          <view class="_div data-v-1128af3a nameTime">
+            <view class="_div data-v-1128af3a name">{{morning.nickname}}</view>
+            <view class="_div data-v-1128af3a time">
+              <view style="width:110rpx;text-align:center;color:rgb(245,111,97)" class="_div data-v-1128af3a">{{morning.time}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="_div data-v-1128af3a title" wx:if="{{number==2}}">
+      <view class="_div data-v-1128af3a spannumber">名次</view>
+      <view class="_div data-v-1128af3a avartUrl"></view>
+      <view class="_div data-v-1128af3a spannameTime">
+        <view class="_div data-v-1128af3a spanname">昵称</view>
+        <view class="_div data-v-1128af3a spanscore">积分数量</view>
+      </view>
+    </view>
+    <view class="_div data-v-1128af3a issign" style="background-color:#fff;" wx:if="{{number==2}}">
+      <view class="_div data-v-1128af3a offsign" wx:if="{{!sign}}">
+        <test class="_test data-v-1128af3a">你还没开始签到获取积分～</test>
+      </view>
+      <view class="_div data-v-1128af3a title" wx:if="{{sign}}">
+        <view class="_div data-v-1128af3a number" style="color:rgb(245,111,97)">{{userscore.ScoreRank}}</view>
+        <view class="_div data-v-1128af3a avartUrl">
+          <image src="{{userscore.avatarurl}}" class="_img data-v-1128af3a"></image>
+        </view>
+        <view class="_div data-v-1128af3a nameTime">
+          <view class="_div data-v-1128af3a name">{{userscore.nickname}}</view>
+          <view class="_div data-v-1128af3a score">
+            <view style="width:110rpx;text-align:center;color:rgb(245,111,97)" class="_div data-v-1128af3a">{{userscore.totalscore}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <scroll-view scroll-y="true" class="_scroll-view data-v-1128af3a phone" wx:if="{{number==2}}">
+      <view class="_view data-v-1128af3a phb" style="margin-top:17rpx" wx:key="scorerank" key="{{scorerank}}" wx:if="{{scorerank.totalscore>0}}" wx:for="{{scorerank}}" wx:for-index="index" wx:for-item="scorerank">
+        <view class="_div data-v-1128af3a title" style="background-color:#fff;">
+          <view class="_div data-v-1128af3a number" style="color:rgb(245,111,97)">
+            <view wx:if="{{scorerank.rank<4}}" class="_div data-v-1128af3a {{'no' + scorerank.rank}}"></view>
+            <view wx:if="{{scorerank.rank>3}}" class="_div data-v-1128af3a afferthird">{{scorerank.rank}}</view>
+          </view>
+          <view class="_div data-v-1128af3a avartUrl">
+            <image src="{{scorerank.avatarurl}}" class="_img data-v-1128af3a"></image>
+          </view>
+          <view class="_div data-v-1128af3a nameTime">
+            <view class="_div data-v-1128af3a name">{{scorerank.nickname}}</view>
+            <view class="_div data-v-1128af3a score">
+              <view style="width:110rpx;text-align:center;color:rgb(245,111,97)" class="_div data-v-1128af3a">{{scorerank.totalscore}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</template>

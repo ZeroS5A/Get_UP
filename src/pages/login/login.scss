@@ -1,0 +1,29 @@
+.head{
+	padding: 0rpx;
+    margin: 0rpx;
+    width: 100%;
+    background-color: white;
+    height: 1206rpx;
+    .clock{
+        margin-top: 181rpx;
+	    margin-left: 217rpx;
+	    width: 332rpx;
+        height: 300rpx;
+    }
+    .tittle{
+        padding-top: 16rpx;
+	    margin-left: 217rpx;
+        width: 354rpx;
+	    height: 106rpx;
+    }
+    .login{
+        position: absolute;
+        top: 788rpx;
+	    margin-left: 266rpx;
+        width: 225rpx;
+        height: 70rpx;
+        background-size: 225rpx 70rpx;
+        background-repeat:no-repeat;
+        border:none;
+    }
+}

@@ -1,0 +1,317 @@
+.head{
+    width: 100%;
+    margin-top:10rpx;
+    margin-bottom: 10rpx;
+    height: 88rpx;
+    background-color: #fff;
+    //position:fixed;
+    display: flex;
+    justify-content: center;
+    font-size: 30rpx;
+    color: rgb(51,51,51);
+    font-family: 'AdobeHeitiStd-Regular';
+    .list{
+        width: 340rpx;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.jifen{
+    width: 100%;
+    height: 70rpx;
+    position: absolute;
+    top:108rpx;
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 10rpx;
+    align-items: center;
+   
+    .yuer{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: absolute;
+        margin-top: 2rpx;
+        margin-left: 14rpx;            
+        color: #9cd2eb;
+        font-size: 30rpx;
+        font-weight: bolder; 
+        border-right: 1px solid rgb(204, 204, 204);
+    }
+    .jifen-num{
+        margin-left: 14rpx;
+        position: absolute;
+        left: 25%;
+        font-size: 30rpx;
+        width: 200rpx;
+        color: rgb(245,111,97);
+    }
+    .rule{
+        width: 168rpx;
+        height: 48rpx;
+        position: absolute;
+        right: 0;
+    }
+}
+
+.shop{
+    //margin-top: 20rpx;
+    position: absolute;
+    top:188rpx;
+    height: 85%;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    .shop-list{
+        //border: 2px solid rgb(245,111,97);
+        border-radius: 15px;
+        margin: 25rpx auto;
+        margin-left: 3%;
+        display: inline-block;
+        width: 94%;
+        height: 550rpx;
+        //阴影效果
+        background-color: #fff;
+        -moz-box-shadow:1px 0px 13px #969696; 
+        -webkit-box-shadow:1px 0px 13px #969696; 
+        box-shadow:1px 0px 13px #969696;
+
+        .shop-item{
+            //margin: 20rpx;
+            .shop-img{
+                //margin-top: 5rpx;
+                border-radius: 15px;
+                width:100%;
+                height:400rpx;
+                position: relative;
+                .shop-img2{
+                    position: absolute;
+                    width: 100%;
+                    height: 65rpx;
+                    bottom: 0px;
+                    border-radius: 15px 15px 0 0;
+                    font-size: 35rpx;
+                    vertical-align:bottom;
+                    color: whitesmoke;
+                    font-family: 'AdobeHeitiStd-Regular';
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
+                    //background-color: rgb(245,111,97);
+                }
+            }
+            .shop-msg{
+                //background-color: aquamarine;
+                margin: 25rpx;
+                width: 90%;
+                height: 90rpx;
+                display: flex;
+                justify-content: center;
+                .left{
+                    width: 40%;
+                    //background-color: royalblue;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 35rpx;
+                    font-weight:bold;
+                    color: rgb(51,51,51);
+                    font-family: 'AdobeHeitiStd-Regular';
+                }
+                
+                .right{
+                    width: 60%;
+                    //background-color: red;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    font-size: 30rpx;
+                    color: rgb(51,51,51);
+                    font-family: 'AdobeHeitiStd-Regular';
+                }
+            }
+        }
+    }
+}
+
+.shop1{
+    position: absolute;
+    top:188rpx;
+    height: 85%;
+    width: 100%;
+    //background-color: #F19483;
+    .shop-list{
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        .shop-item{
+            border-radius: 15px;
+            margin: 4%;
+            width: 42%;
+            height: 500rpx;
+            background-color: white;
+
+            //阴影效果
+            background-color: #fff;
+            -moz-box-shadow:1px 0px 13px #969696; 
+            -webkit-box-shadow:1px 0px 13px #969696; 
+            box-shadow:1px 0px 8px #969696;
+            .shop-msg{
+                width: 100%;
+                height: 350rpx;
+                border-radius: 15px 15px 0 0;
+                background-color:#EFCBCB;
+                //background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572532897186&di=087f09a7202e900888d3a80c81517fd2&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Ffe79292f1c19924cdf01ea1fb5e5f56d484eaf72911f-5OPxVY_fw658);
+                //图片自适应
+                // background-size: cover;
+                // -webkit-background-size: cover;
+                // -o-background-size: cover;
+                // background-position: center 0;
+                // border-bottom-style:dotted;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: antiquewhite;
+                p{
+                    margin: 20rpx 0;
+                    text-align: center;
+                    color: #5F6263;
+                    
+                }
+                .border{
+                    margin: 10rpx,0;
+                    height: 3rpx;
+                    width: 100%;
+                    background-color:grey;
+                }
+            }
+            .shop-msg2{
+                height: 150rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap ;
+                
+                .button{
+                    border-radius: 15px;
+                    width: 40%;
+                    height: 55rpx;
+                    background-color: #EFAFAF;
+                    color: white;
+                    text-align: center;
+                    align-items: center;
+
+                    
+                }
+            }
+
+        }
+    }
+}
+
+.log{
+    position: absolute;
+    top:108rpx;
+    height: 90%;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    display: inline-block;
+    
+    .log-item{
+        margin: 30rpx auto;
+        width: 90%;
+        height: 150rpx;
+        display: flex;
+
+        .log-left{
+            width: 75%;
+            border-radius: 10px 5px 5px 10px;
+            border-right: dotted 5rpx;
+            background-color:#F9F2F5;
+            //background-image: url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3584282287,1907119126&fm=26&gp=0.jpg);
+            -moz-box-shadow:1px 0px 13px #969696; 
+            -webkit-box-shadow:1px 0px 13px #969696; 
+            box-shadow:1px 0px 13px #969696;
+            //display: flex;
+            .log-img{
+                border-radius: 10px;
+                margin: 10rpx;
+                float: left;
+                height: 125rpx;
+                width: 25%;
+            }
+            .log-msg{
+                margin-top: 15rpx;
+                height: 120rpx;
+                width: 100%;
+                //display: flex;
+                //justify-content: center;
+                //align-items: center;
+                text-align: center;
+                font-size: 30rpx;
+                color: rgb(51,51,51);
+                font-weight: bold;
+                font-family: 'AdobeHeitiStd-Regular';
+            }
+        }
+        
+        .log-right{
+            //border-left: dotted 5rpx;
+            border-radius: 5px 10px 10px 5px;
+            background-color:#F9F2F5;
+            //background-image: url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3584282287,1907119126&fm=26&gp=0.jpg);
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30rpx;
+            color: rgb(51,51,51);
+            font-weight: bold;
+            font-family: 'AdobeHeitiStd-Regular';
+            -moz-box-shadow:1px 0px 13px #969696; 
+            -webkit-box-shadow:1px 0px 13px #969696; 
+            box-shadow:1px 0px 13px #969696;
+        }
+    }
+
+}
+
+.model-msg{
+    margin: 20rpx auto;
+    height: 100rpx;
+    width: 100%;
+    text-align: center;
+    font-size: 35rpx;
+    color: darksalmon;
+}
+
+.shop-model{
+    height:700rpx;
+    .h2{
+        margin: 20px,0;
+        font-size: 15px;
+        font-weight: bold;
+        color:#F19483;
+    }
+    .img{
+        border-radius: 15px;
+        border-color: #F19483 10px;
+        width:85%;
+        height:400rpx;
+        position: relative;
+        margin: 20px;
+        background-color: #fff;
+        -moz-box-shadow:1px 0px 13px #969696; 
+        -webkit-box-shadow:1px 0px 13px #969696; 
+        box-shadow:1px 0px 13px #969696;
+    }
+    p{
+        margin: 10px 0px;
+        margin-right: 15px;
+        
+    }
+}

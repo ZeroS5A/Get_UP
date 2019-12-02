@@ -1,0 +1,332 @@
+.head{
+    width: 96%;
+    height: 332rpx;
+    background-color: #fff;
+    margin:18rpx auto;
+    margin-bottom: 0;
+
+    border-radius: 15px 15px 0 0;
+    background-color: #fff;
+    -moz-box-shadow:1px 0px 13px #969696; 
+    -webkit-box-shadow:1px 0px 13px #969696; 
+    box-shadow:1px 0px 13px #969696;
+    .top{
+        width: 95%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        .img{
+            width: 100rpx;
+            height: 100rpx;
+            margin-left: 45rpx;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .username{
+            flex-grow: 1;
+            font-size: 30rpx;
+            fontFamily: "﻿MHeiM-C-GB18030-S60";
+            color: "#333333";
+            margin-left: 40rpx;
+        }
+        .sign{
+            .No{
+                width: 105rpx;
+                height: 44rpx;
+                border-radius: 20rpx;
+                font-size: 24rpx;
+                fontFamily: "﻿MHeiM-C-GB18030-S60";
+                justify-content: center;
+                color:#fff;
+                display: flex;
+                align-items: center;
+                background-color: #959595;
+            }
+            .Is{
+                width: 105rpx;
+                height: 44rpx;
+                border-radius: 20rpx;
+                font-size: 24rpx;
+                fontFamily: "﻿MHeiM-C-GB18030-S60";
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                background-color: rgb(245,111,97);
+                color:#fff;
+            }
+        }
+    }
+    .bottom{
+        width: 100%;
+        margin: auto;
+        height: 50%;
+        border-top:1px solid #D4D4D4;
+        .DayAndNum{
+            width: 100%;
+            height: 180rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .all{
+                width: 704rpx;
+                height: 94rpx;
+                .blockAll{
+                    height: 100%;
+                    width: 232rpx;
+                    float: left;
+                    text-align: center;
+                    h4{
+                        font-size: 24rpx;
+                        color:rgb(51,51,51);
+                        font-weight:bold;
+                        font-family: 'MHeiM-C-GB18030-S60'
+                    }
+                    span{
+                        font-size:48rpx;
+                        color:rgb(245,111,97);
+                        font-weight: bolder;
+                    }
+                }
+                .blockAll[data-index="0"]{
+                    border-right: 1px solid rgb(204,204,204);
+                }
+                .blockAll[data-index="1"]{
+                    border-right: 1px solid rgb(204,204,204);
+                }
+               
+            }
+        }
+
+    }
+}
+
+.ather{
+    width: 96%;
+    height: 150rpx;
+    margin: 0 auto;
+    border-radius: 0 0 15px 15px;
+    background-color: #fff;
+    -moz-box-shadow:1px 0px 13px #969696; 
+    -webkit-box-shadow:1px 10px 13px #969696; 
+    box-shadow:1px 5px 8px #969696;
+
+   .rebind{
+        height: 50%;
+        width: 100%;
+        border-top:1px solid #D4D4D4;
+        border-bottom:1px solid #D4D4D4;
+        display: flex;
+        align-items: center;
+        //justify-content: center;
+        .left{
+            margin-left: 50rpx;
+            width: 100%;
+            font-size: 30rpx;
+            color:rgb(51,51,51);
+            //font-weight:bold;
+            font-family: 'MHeiM-C-GB18030-S60'
+        }
+        .right{
+            margin-right: 50rpx;
+        }
+    }
+    .about{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        //justify-content: center;
+        .left{
+            margin-left: 50rpx;
+            width: 100%;
+            font-size: 30rpx;
+            color:rgb(51,51,51);
+            //font-weight:bold;
+            font-family: 'MHeiM-C-GB18030-S60'
+        }
+        .right{
+            margin-right: 50rpx;
+        }
+    } 
+}
+
+.recoveTitle{
+    width: 100%;
+    height: 80rpx;
+    background-color: #fff;
+    position: absolute;
+    margin-top:30rpx;
+    display: flex;
+    align-items: center;
+    img{
+        width: 186rpx;
+        height: 48rpx;
+    }
+    .userdata{
+        position:absolute;
+        right:0rpx;
+        font-size: 26rpx;
+        color:rgb(117,117,117);
+        font-family: "MHeiM-C-GB18030-S60";
+        font-weight: 900rpx;
+        .tr{
+            width: 478rpx;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            //border: 1px solid gray;
+        }
+        .th{
+            width: 30%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            //border: 1px solid gray;
+        }
+    }
+}
+.scoll-look{
+    background-color: #fff;
+    width:100%;
+    height: 500rpx;
+    margin-top:110rpx;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    .date{
+       position:absolute;
+       width: 250rpx;
+       height: 100rpx;
+       color:rgb(102,102,102);
+       font-size: 30rpx;
+       font-family: "﻿MHeiM-C-GB18030-S60";
+       .datetd{
+            margin-top: 40rpx;
+            justify-content: center;
+            text-align: center;
+       }
+    }
+    .table{
+       width: 478rpx;
+       position:absolute;
+       right:0rpx;
+       .tr{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            //border: 1px solid gray;
+        }
+        .td{
+            width:30%;
+            color:rgb(102,102,102);
+            font-size: 30rpx;
+            font-family: "﻿MHeiM-C-GB18030-S60";
+            margin-top: 40rpx;
+            justify-content: center;
+            text-align: center;
+            //border: 1px solid gray;
+        }
+        .tdrank{
+            width:60rpx;
+            font-size:21rpx;
+            color:rgb(102,102,102);
+            font-family: "﻿MHeiM-C-GB18030-S60";
+            margin-top: 40rpx;
+            justify-content: center;
+            //text-align: center;
+            //border: 1px solid gray;
+        }
+        .tdnorank{
+            
+            width:30%;
+            font-size:27rpx;
+            color:rgb(102,102,102);
+            font-family: "﻿MHeiM-C-GB18030-S60";
+            margin-top: 40rpx;
+            //justify-content: center;
+            text-align: center;
+            //border: 1px solid gray;
+        }
+        .tdscore{         
+            width:30%;
+            color:rgb(102,102,102);
+            font-size: 30rpx;
+            font-family: "﻿MHeiM-C-GB18030-S60";
+            margin-top: 40rpx;
+            justify-content: center;
+            text-align: center;
+            //border: 1px solid gray;
+        }
+        .tdsignscore{          
+            width:30%;
+            color:rgb(102,102,102);
+            font-size: 30rpx;
+            font-family: "﻿MHeiM-C-GB18030-S60";
+            margin-top: 40rpx;
+            //justify-content: center;
+            text-align: center;
+            //border: 1px solid gray;
+        }
+    }
+}
+.shop-model{
+    height:700rpx;
+    margin: 0;
+    h2{
+        margin: 20px,0;
+        font-size: 15px;
+        font-weight: bold;
+        color:#F19483;
+    }
+    .img{
+        border-radius: 15px;
+        border-color: #F19483 10px;
+        
+        width:200px;
+        height:200px;
+        position: relative;
+        margin: 20px;
+        margin-left: 50rpx;
+        
+        background-color: #fff;
+        -moz-box-shadow:1px 0px 13px #969696; 
+        -webkit-box-shadow:1px 0px 13px #969696; 
+        box-shadow:1px 0px 8px #969696;
+    }
+    p{
+        margin: 10px 0px;
+        margin-right: 15px;
+        color:rgb(51,51,51);
+            //font-weight:bold;
+            font-family: 'MHeiM-C-GB18030-S60'
+    }
+}
+/*iphonex1040*/
+@media screen and (width: 375px) and (height:642px){
+    .scoll-look{
+        height:650rpx;
+        width:100%;
+    }
+}
+/*安卓全面屏*/
+@media screen and (min-width: 376px) and (min-height:643px){
+    .scoll-look{
+        height:720rpx;
+        width:100%;
+    }
+    .scoll-look{
+        .table{
+           .tdrank{
+            width:36rpx;
+            font-size:18rpx;
+            color:rgb(102,102,102);
+            font-family: "﻿MHeiM-C-GB18030-S60";
+            margin-top: 20rpx;
+            justify-content: center;
+            text-align: center;
+        }
+
+        }
+    }
+}
