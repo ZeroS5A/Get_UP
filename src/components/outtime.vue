@@ -8,27 +8,27 @@
                 活动还没开始哦
             </div>
             <div class="title" v-if="morningdata.nowtime==-2">
-                今日未签到
-                <!-- 今日无早起 -->
+                <!--今日未签到-->
+                 今日无早起 
             </div>
             <div class="content1" v-if="morningdata.nowtime==-2">
-                今日签到时间已经结束啦<br>
+                <!-- 今日签到时间已经结束啦<br>
                 北鼻晚安！<br>
                 内测签到时间是<br>
-                20:00～24:00
-                <!-- 今日早起时间已经结束啦~
-                北鼻调好闹钟，明日再战！
-                签到时间是6:30～10:30哦 -->
+                20:00～24:00-->
+                今日早起时间已经结束啦~<br>
+                北鼻调好闹钟，明日再战！<br>
+                签到时间是6:30～10:30哦 
             </div>
             <div class="content1" v-if="morningdata.nowtime==-3">
                 北鼻，活动开始时间是<br>
                 2019-11-28哦<br>
             </div>  
             <div class="content1" v-if="morningdata.nowtime==-1">
-                内测签到时间是<br>
-                20:00～24:00噢
-                <!-- 签到时间是6:30～10:30哦
-                北鼻再睡一会吧~ -->
+                <!--内测签到时间是<br>
+                20:00～24:00噢-->
+                签到时间是6:30～10:30哦<br>
+                北鼻再睡一会吧~ 
             </div>
             <div class="img">
                 <img src="http://image.myzhbit.cn/myzhbit/Getup/sure.png">

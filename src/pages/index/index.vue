@@ -507,11 +507,17 @@ export default {
           ctx.setStrokeStyle('white');
           ctx.clip();
           ctx.drawImage(res.tempFilePath, 0, 0, 100, 100);        
-          ctx.draw();
-          return that.canvasToTempFilePath('url');
-        })
-        .then((res) => {
-          that.urldown = res.tempFilePath;
+          ctx.draw(true,(()=>{
+            setTimeout(() => {
+              wx.canvasToTempFilePath({
+                canvasId: "url",
+                success: function (res) {
+                  that.urldown = res.tempFilePath;
+                }
+              })
+            }, 300);
+          }));
+          //return that.canvasToTempFilePath('url');
         })
     },
     createShareImage(){
@@ -520,69 +526,81 @@ export default {
       title: '正在生成图片',
       icon: "loading",
       mask:'true',
-      duration: 4000,
+      duration: 3000,
       complete:function(){
         var tempurl = 'https://image.myzhbit.cn/myzhbit/Getup/share.png';
         var ctx = wx.createCanvasContext('sharepicture');
         that.getImg(tempurl)
         .then((res) => {
-        var temp = res.tempFilePath;
-        ctx.drawImage(temp,0, 0,750,470);
-        ctx.draw();
-        ctx.font = "100px 宋体"; 
-        ctx.fillStyle = "#605f5f";
-        ctx.fillText(that.morningdata.time,250,272);
-        ctx.font = "normal normal bold 20px 宋体";
-        ctx.strokeStyle = "#605f5f";
-        ctx.lineWidth = 4;      
-        ctx.fillStyle = "#ffffff";
-        /***右边标题***/
-        ctx.font = "normal normal bold 18px 宋体";
-        ctx.strokeText(that.imgtime,19,35);
-        ctx.fillText(that.imgtime,19,35);
-        /***左侧标题***/
-        /***四六级期限***/
-        if(that.deadline < 10){
-          ctx.font = "normal normal bold 21px 宋体";
-          ctx.strokeText(that.deadline,695,36);
-          ctx.fillText(that.deadline,695,36);
-        }else if(that.deadline >= 10 && that.deadline < 100){
-          ctx.font = "normal normal bold 21px 宋体";
-          ctx.strokeText(that.deadline,688,36);
-          ctx.fillText(that.deadline,688,36);
-        }
-        /***起床排名***/
-        if(that.morningrank < 10){
-          ctx.font = "normal normal bold 21px 宋体";
-          ctx.strokeText(that.morningrank,695,66);
-          ctx.fillText(that.morningrank,695,66);
-        }else if(that.morningrank >= 10 && that.morningrank < 100){
-          ctx.font = "normal normal bold 21px 宋体";
-          ctx.strokeText(that.morningrank,689,66);
-          ctx.fillText(that.morningrank,689,66);
-        }else if(that.morningrank > 100){
+          var temp = res.tempFilePath;
+          ctx.drawImage(temp,0, 0,750,470);
+          ctx.draw();
+          ctx.font = "100px 宋体"; 
+          ctx.fillStyle = "#605f5f";
+          ctx.fillText(that.morningdata.time,250,272);
+          ctx.font = "normal normal bold 20px 宋体";
+          ctx.strokeStyle = "#605f5f";
+          ctx.lineWidth = 4;      
+          ctx.fillStyle = "#ffffff";
+          /***右边标题***/
           ctx.font = "normal normal bold 18px 宋体";
-          ctx.strokeText(that.morningrank,684,66);
-          ctx.fillText(that.morningrank,684,66);
-        }
-        /***签到天数***/
-        if(that.morningdata.signdays < 10){
-          ctx.font = "normal normal bold 21px 宋体";
-          ctx.strokeText(that.morningdata.signdays,694,96);
-          ctx.fillText(that.morningdata.signdays,694,96);
-        }else if(that.morningdata.signdays >= 10 && that.morningdata.signdays < 100){
-          ctx.font = "normal normal bold 21px 宋体";
-          ctx.strokeText(that.morningdata.signdays,688,96);
-          ctx.fillText(that.morningdata.signdays,688,96);
-        }
-        /**** ****/   
-        ctx.drawImage(that.urldown,353,378,44,44);
-        ctx.draw(true);
-        return that.canvasToTempFilePath('sharepicture');   
-      }).then((res) => {
-        that.previewImg(res.tempFilePath);
-      })       
-      }
+          ctx.strokeText(that.imgtime,19,35);
+          ctx.fillText(that.imgtime,19,35);
+          /***奖品***/
+          ctx.font = "normal normal bold 25px 宋体";
+          ctx.strokeText(that.morningdata.mget,19,85);
+          ctx.fillText(that.morningdata.mget,19,85); 
+          /***左侧标题***/
+          /***四六级期限***/
+          if(that.deadline < 10){
+            ctx.font = "normal normal bold 21px 宋体";
+            ctx.strokeText(that.deadline,695,36);
+            ctx.fillText(that.deadline,695,36);
+          }else if(that.deadline >= 10 && that.deadline < 100){
+            ctx.font = "normal normal bold 21px 宋体";
+            ctx.strokeText(that.deadline,688,36);
+            ctx.fillText(that.deadline,688,36);
+          }
+          /***起床排名***/
+          if(that.morningrank < 10){
+            ctx.font = "normal normal bold 21px 宋体";
+            ctx.strokeText(that.morningrank,695,66);
+            ctx.fillText(that.morningrank,695,66);
+          }else if(that.morningrank >= 10 && that.morningrank < 100){
+            ctx.font = "normal normal bold 21px 宋体";
+            ctx.strokeText(that.morningrank,689,66);
+            ctx.fillText(that.morningrank,689,66);
+          }else if(that.morningrank > 100){
+            ctx.font = "normal normal bold 18px 宋体";
+            ctx.strokeText(that.morningrank,684,66);
+            ctx.fillText(that.morningrank,684,66);
+          }
+          /***签到天数***/
+          if(that.morningdata.signdays < 10){
+            ctx.font = "normal normal bold 21px 宋体";
+            ctx.strokeText(that.morningdata.signdays,694,96);
+            ctx.fillText(that.morningdata.signdays,694,96);
+          }else if(that.morningdata.signdays >= 10 && that.morningdata.signdays < 100){
+            ctx.font = "normal normal bold 21px 宋体";
+            ctx.strokeText(that.morningdata.signdays,688,96);
+            ctx.fillText(that.morningdata.signdays,688,96);
+          }
+          /**** ****/   
+          ctx.drawImage(that.urldown,353,378,44,44);
+          // ctx.draw(true);
+          //把生成路径写在draw的回调方法中，保证在draw写完后再生成路径
+          ctx.draw(true,(()=>{
+            setTimeout(() => {
+              wx.canvasToTempFilePath({
+                canvasId: 'sharepicture',
+                success: function (res) {
+                  that.previewImg(res.tempFilePath);
+                }
+              })   
+            }, 300);
+          })());
+        })      
+      }//complete end
      })   
     },
   },
