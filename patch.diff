@@ -1,0 +1,9 @@
+diff --git a/.gitignore b/.gitignore
+index 14ea590..2c7c74c 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -12,3 +12,4 @@ $RECYCLE.BIN/
+ 
+ # Node.js
+ node_modules/
++/dist
